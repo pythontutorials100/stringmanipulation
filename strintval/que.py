@@ -6,7 +6,7 @@ WHERE {
   # Retrieve the Part Number and Part Item
   ?ibe_part_number a :Information_Bearing_Entity ;
                    :has_text_value ?partNumber .
-  FILTER(?partNumber = "PN-1001"^^xsd:string)
+  FILTER(?partNumber = "PN-1025"^^xsd:string)
   ?ice_part_number a :Part_Number ;
                    :generically_depends_on ?ibe_part_number ;
                    :designates ?part .
